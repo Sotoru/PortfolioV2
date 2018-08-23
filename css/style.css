@@ -1,0 +1,153 @@
+body, html {
+    height: 100%;
+    margin: 0;
+
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../img/background.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.uk-text-center{
+    text-align:left!important;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .navbar-pad-right {
+        padding-right: 10vw;
+     }
+
+     .navbar-pad-left {
+        padding-left: 10vw;
+     }
+
+     .uk-text-center{
+        padding-left: 10vw;
+    }
+     
+    .view-mobile {
+        display:none;
+    }
+}
+
+
+.pad-logo {
+    padding-left: 2vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+
+    .bg {
+        background-image: url("../img/bg-phone.png");
+    }
+
+    .uk-text-center{
+        text-align: center!important;
+    }
+
+    .view-desktop {
+        display:none;
+    }
+}
+
+h1 {
+    color: white;
+
+}
+
+.pad-but {
+    padding-top: 10vw;
+}
+
+.uk-button {
+    margin: 4px;
+    border: none;
+    
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .1s ease-in-out;
+    color: #0062FF;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+.uk-h2, h2 {
+    color: #FFF700;
+    font-size: 1.9rem;
+    line-height: 1.3;
+}
+
+.description {
+    color: white;
+}
+
+.pad-but-desk {
+    padding-top: 4em;
+}
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.uk-offcanvas-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: auto;
+    padding: 20px 20px;
+    background: white;
+    overflow-y: auto;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #0062FF;
+}
+
+.uk-navbar-toggle {
+    color:white;
+}
+
+h3 {
+    color: black;
+}
+
+.menu{
+    color: #0062FF;
+}
+
+.uk-card-primary.uk-card-body .uk-h1, .uk-card-primary.uk-card-body .uk-h2, .uk-card-primary.uk-card-body .uk-h3, .uk-card-primary.uk-card-body .uk-h4, .uk-card-primary.uk-card-body .uk-h5, .uk-card-primary.uk-card-body .uk-h6, .uk-card-primary.uk-card-body h1, .uk-card-primary.uk-card-body h2, .uk-card-primary.uk-card-body h3, .uk-card-primary.uk-card-body h4, .uk-card-primary.uk-card-body h5, .uk-card-primary.uk-card-body h6, .uk-card-primary>:not([class*=uk-card-media]) .uk-h1, .uk-card-primary>:not([class*=uk-card-media]) .uk-h2, .uk-card-primary>:not([class*=uk-card-media]) .uk-h3, .uk-card-primary>:not([class*=uk-card-media]) .uk-h4, .uk-card-primary>:not([class*=uk-card-media]) .uk-h5, .uk-card-primary>:not([class*=uk-card-media]) .uk-h6, .uk-card-primary>:not([class*=uk-card-media]) h1, .uk-card-primary>:not([class*=uk-card-media]) h2, .uk-card-primary>:not([class*=uk-card-media]) h3, .uk-card-primary>:not([class*=uk-card-media]) h4, .uk-card-primary>:not([class*=uk-card-media]) h5, .uk-card-primary>:not([class*=uk-card-media]) h6, .uk-card-secondary.uk-card-body .uk-h1, .uk-card-secondary.uk-card-body .uk-h2, .uk-card-secondary.uk-card-body .uk-h3, .uk-card-secondary.uk-card-body .uk-h4, .uk-card-secondary.uk-card-body .uk-h5, .uk-card-secondary.uk-card-body .uk-h6, .uk-card-secondary.uk-card-body h1, .uk-card-secondary.uk-card-body h2, .uk-card-secondary.uk-card-body h3, .uk-card-secondary.uk-card-body h4, .uk-card-secondary.uk-card-body h5, .uk-card-secondary.uk-card-body h6, .uk-card-secondary>:not([class*=uk-card-media]) .uk-h1, .uk-card-secondary>:not([class*=uk-card-media]) .uk-h2, .uk-card-secondary>:not([class*=uk-card-media]) .uk-h3, .uk-card-secondary>:not([class*=uk-card-media]) .uk-h4, .uk-card-secondary>:not([class*=uk-card-media]) .uk-h5, .uk-card-secondary>:not([class*=uk-card-media]) .uk-h6, .uk-card-secondary>:not([class*=uk-card-media]) h1, .uk-card-secondary>:not([class*=uk-card-media]) h2, .uk-card-secondary>:not([class*=uk-card-media]) h3, .uk-card-secondary>:not([class*=uk-card-media]) h4, .uk-card-secondary>:not([class*=uk-card-media]) h5, .uk-card-secondary>:not([class*=uk-card-media]) h6, .uk-light .uk-h1, .uk-light .uk-h2, .uk-light .uk-h3, .uk-light .uk-h4, .uk-light .uk-h5, .uk-light .uk-h6, .uk-light h1, .uk-light h2, .uk-light h3, .uk-light h4, .uk-light h5, .uk-light h6, .uk-offcanvas-bar .uk-h1, .uk-offcanvas-bar .uk-h2, .uk-offcanvas-bar .uk-h3, .uk-offcanvas-bar .uk-h4, .uk-offcanvas-bar .uk-h5, .uk-offcanvas-bar .uk-h6, .uk-offcanvas-bar h1, .uk-offcanvas-bar h2, .uk-offcanvas-bar h3, .uk-offcanvas-bar h4, .uk-offcanvas-bar h5, .uk-offcanvas-bar h6, .uk-overlay-primary .uk-h1, .uk-overlay-primary .uk-h2, .uk-overlay-primary .uk-h3, .uk-overlay-primary .uk-h4, .uk-overlay-primary .uk-h5, .uk-overlay-primary .uk-h6, .uk-overlay-primary h1, .uk-overlay-primary h2, .uk-overlay-primary h3, .uk-overlay-primary h4, .uk-overlay-primary h5, .uk-overlay-primary h6, .uk-section-primary:not(.uk-preserve-color) .uk-h1, .uk-section-primary:not(.uk-preserve-color) .uk-h2, .uk-section-primary:not(.uk-preserve-color) .uk-h3, .uk-section-primary:not(.uk-preserve-color) .uk-h4, .uk-section-primary:not(.uk-preserve-color) .uk-h5, .uk-section-primary:not(.uk-preserve-color) .uk-h6, .uk-section-primary:not(.uk-preserve-color) h1, .uk-section-primary:not(.uk-preserve-color) h2, .uk-section-primary:not(.uk-preserve-color) h3, .uk-section-primary:not(.uk-preserve-color) h4, .uk-section-primary:not(.uk-preserve-color) h5, .uk-section-primary:not(.uk-preserve-color) h6, .uk-section-secondary:not(.uk-preserve-color) .uk-h1, .uk-section-secondary:not(.uk-preserve-color) .uk-h2, .uk-section-secondary:not(.uk-preserve-color) .uk-h3, .uk-section-secondary:not(.uk-preserve-color) .uk-h4, .uk-section-secondary:not(.uk-preserve-color) .uk-h5, .uk-section-secondary:not(.uk-preserve-color) .uk-h6, .uk-section-secondary:not(.uk-preserve-color) h1, .uk-section-secondary:not(.uk-preserve-color) h2, .uk-section-secondary:not(.uk-preserve-color) h3, .uk-section-secondary:not(.uk-preserve-color) h4, .uk-section-secondary:not(.uk-preserve-color) h5, .uk-section-secondary:not(.uk-preserve-color) h6, .uk-tile-primary:not(.uk-preserve-color) .uk-h1, .uk-tile-primary:not(.uk-preserve-color) .uk-h2, .uk-tile-primary:not(.uk-preserve-color) .uk-h3, .uk-tile-primary:not(.uk-preserve-color) .uk-h4, .uk-tile-primary:not(.uk-preserve-color) .uk-h5, .uk-tile-primary:not(.uk-preserve-color) .uk-h6, .uk-tile-primary:not(.uk-preserve-color) h1, .uk-tile-primary:not(.uk-preserve-color) h2, .uk-tile-primary:not(.uk-preserve-color) h3, .uk-tile-primary:not(.uk-preserve-color) h4, .uk-tile-primary:not(.uk-preserve-color) h5, .uk-tile-primary:not(.uk-preserve-color) h6, .uk-tile-secondary:not(.uk-preserve-color) .uk-h1, .uk-tile-secondary:not(.uk-preserve-color) .uk-h2, .uk-tile-secondary:not(.uk-preserve-color) .uk-h3, .uk-tile-secondary:not(.uk-preserve-color) .uk-h4, .uk-tile-secondary:not(.uk-preserve-color) .uk-h5, .uk-tile-secondary:not(.uk-preserve-color) .uk-h6, .uk-tile-secondary:not(.uk-preserve-color) h1, .uk-tile-secondary:not(.uk-preserve-color) h2, .uk-tile-secondary:not(.uk-preserve-color) h3, .uk-tile-secondary:not(.uk-preserve-color) h4, .uk-tile-secondary:not(.uk-preserve-color) h5, .uk-tile-secondary:not(.uk-preserve-color) h6 {
+    color: black; }
+
+.uk-card-primary.uk-card-body .uk-close, .uk-card-primary>:not([class*=uk-card-media]) .uk-close, .uk-card-secondary.uk-card-body .uk-close, .uk-card-secondary>:not([class*=uk-card-media]) .uk-close, .uk-light .uk-close, .uk-offcanvas-bar .uk-close, .uk-overlay-primary .uk-close, .uk-section-primary:not(.uk-preserve-color) .uk-close, .uk-section-secondary:not(.uk-preserve-color) .uk-close, .uk-tile-primary:not(.uk-preserve-color) .uk-close, .uk-tile-secondary:not(.uk-preserve-color) .uk-close {
+ color: #0062FF;
+}
+
