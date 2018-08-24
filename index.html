@@ -72,7 +72,7 @@
 
                         <div class="view-mobile">
                                 <div class="pad-but"></div>
-                                <button class="uk-button uk-button"> View my Projects!</button>
+                                <button class="uk-button"> View my Projects!</button>
                         </div>
 
                       
@@ -81,13 +81,81 @@
                      </div>
                     <div class="view-desktop">
                     
-                        <img src="img/logo.png" alt="LD" width="650px" height="650px" uk-img>
+                        <img src="img/logo.png" alt="LD" width="600px" height="600px" uk-img>
                     </div>
                 </div>
-
-                
                 </div>
                 <!-- fine home -->
+                <div class="proj">
+                <h3 class="proj">My projects</h3>
+                <hr class="uk-divider-small">
+            </div>
+
+            
+            <div uk-filter="target: .js-filter">
+
+    <ul class="uk-subnav uk-subnav-pill ">
+        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+        <li uk-filter-control="[data-color='Web']"><a href="#">Web Design</a></li>
+        <li uk-filter-control="[data-color='Logos']"><a href="#">Logos</a></li>
+        <li uk-filter-control="[data-color='Other']"><a href="#">Other</a></li>
+    </ul>
+
+    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-2@m " uk-grid>
+
+        <li data-color="Web">
+                <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="img/prov.jpg" alt="img1" class="round-img">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Media Top</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+        </li>
+        <li data-color="Logos">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li data-color="Web">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li data-color="Web">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li data-color="Other">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-color="Other">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-color="Logos">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li data-color="Other">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-color="Logos">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li data-color="Web">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </li>
+        <li data-color="Logos">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </li>
+        <li data-color="Other">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+    </ul>
+
+</div>
+<div class="end -phone">
+
+</div>
+
+
 
         
     </body>

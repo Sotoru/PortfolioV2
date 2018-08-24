@@ -17,10 +17,29 @@ body, html {
     background-size: cover;
 }
 
+.end {
+    /* The image used */
+    background-image: url("../img/end.png");
+
+    /* Full height */
+    height: 300px;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .uk-text-center{
     text-align:left!important;
 }
 
+.proj {
+ text-align:center!important;
+font-size: 3rem;
+ line-height: 1.3
+}
 
 @media only screen and (min-width: 768px) {
     .navbar-pad-right {
@@ -40,25 +59,72 @@ body, html {
     }
 }
 
+.uk-subnav-pill>.uk-active>a {
+    background-color: #0062FF;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.uk-subnav{
+    padding-left:10vw;
+}
 
 .pad-logo {
     padding-left: 2vw;
 }
 
+.uk-divider-small {
+    height: 30px;
+}
 
+.uk-heading-hero {
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.uk-card-body {
+    border-radius: 30px;
+}
+
+.uk-card-default {
+    border-radius: 30px;
+}
+
+.round-img {
+    border-radius: 30px;
+}
 @media only screen and (max-width: 768px) {
     
+    .proj {
+        font-size: 2rem;
+
+    }
 
     .bg {
         background-image: url("../img/bg-phone.png");
     }
 
+    .end {
+        background-image: url("../img/end-phone.png");
+        width: 100%;
+        height: 150px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }
     .uk-text-center{
         text-align: center!important;
     }
 
     .view-desktop {
         display:none;
+    }
+
+    .uk-subnav {
+       font-size: 40px;
     }
 }
 
@@ -74,7 +140,6 @@ h1 {
 .uk-button {
     margin: 4px;
     border: none;
-    
     overflow: visible;
     font: inherit;
     color: inherit;
