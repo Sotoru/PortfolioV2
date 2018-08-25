@@ -10,8 +10,9 @@
         <script src="js/uikit-icons.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-
+        <meta name="theme-color" content="#0062FF">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     </head>
     <body>
@@ -52,9 +53,11 @@
 
                 <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
                     
-                    <div class="uk-padding uk-padding">
-                        
-                        <h1 class="uk-heading-hero">Paolo Laddomada</h1>
+                    <div class="uk-padding">
+                        <div class="pad-top"></div>
+                        <div uk-scrollspy="cls: uk-animation-slide-left-small; repeat: false">
+
+                        <h1 class="uk-heading-hero ">Paolo Laddomada</h1>
                         
                         <h2>Front-End developer</h2>
                         
@@ -62,17 +65,21 @@
                                 I am a student of Computer Science and Technology for Software Production.
                                 In addition to university subjects, I acquired Web Front-End skills (Bootstrap & Angular 6) and self-taught study as a Web Designer.
                         </p>
+                    </div>
+                    <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
 
                             <div class="logos">
                             <a href="https://dribbble.com/LadDev"><img src="img/d-logo.png" alt="Dribble" width="25" height="25"></a> 
                                        <span class="pad-logo"></span>     
                             <a href="https://www.linkedin.com/in/paolo-laddomada26/"><img src="img/l-logo.png" alt="Linkedin" width="25" height="25"></a>
                         </div>
-                        
+                    </div>
 
                         <div class="view-mobile">
                                 <div class="pad-but"></div>
-                                <button class="uk-button"> View my Projects!</button>
+                                <a id="js-scroll-trigger" href="#proj" uk-scroll><button class="uk-button"> View my Projects!</button></a>
+
+                                
                         </div>
 
                       
@@ -80,19 +87,23 @@
 
                      </div>
                     <div class="view-desktop">
-                    
+                            <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+
                         <img src="img/logo.png" alt="LD" width="600px" height="600px" uk-img>
+                    </div>
                     </div>
                 </div>
                 </div>
                 <!-- fine home -->
-                <div class="proj">
+                <div class="proj" id="proj">
+                     <div uk-scrollspy="cls: uk-animation-fade; repeat: false">
                 <h3 class="proj">My projects</h3>
+                </div>
                 <hr class="uk-divider-small">
             </div>
 
             
-            <div uk-filter="target: .js-filter">
+            <div uk-filter="target: .js-filter" >
 
     <ul class="uk-subnav uk-subnav-pill ">
         <li class="uk-active" uk-filter-control><a href="#">All</a></li>
@@ -100,27 +111,70 @@
         <li uk-filter-control="[data-color='Logos']"><a href="#">Logos</a></li>
         <li uk-filter-control="[data-color='Other']"><a href="#">Other</a></li>
     </ul>
+    <div class="pad-top"></div>
 
-    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-2@m " uk-grid>
+    
+    <ul class="js-filter uk-child-width-2-3 uk-child-width-1-3@m" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card-default; delay: 500; repeat: true">
 
         <li data-color="Web">
                 <div>
                         <div class="uk-card uk-card-default">
                             <div class="uk-card-media-top">
-                                <img src="img/prov.jpg" alt="img1" class="round-img">
+                                <img src="img/Projects/1.png" alt="img1" class="round-img" >
                             </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Media Top</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-card-body"> 
+                                <div class="uk-card-badge uk-label">July 2018</div>
+                                <a href="https://laddev.github.io/CivicSenseWEBlp/"><h3 class="uk-card-title link-proj">Civic Sense</h3></a>
+                                <p>Website created to publicize the software engineering exam project.</p>
                             </div>
                         </div>
         </li>
-        <li data-color="Logos">
-            <div class="uk-card uk-card-primary uk-card-body">Item</div>
-        </li>
         <li data-color="Web">
-            <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                            
+                        <img src="img/Projects/2.png" alt="img1" class="round-img">
+                    </div>
+                    <div class="uk-card-body">
+                            <div class="uk-card-badge uk-label">August 2018</div>
+                        <a href="https://laddev.github.io/PortfolioSS/"><h3 class="uk-card-title link-proj">Simona Schiavone</h3></a>
+                        <p>Portfolio created for an educator with the aim of publicizing her skills and competences in the sector of education.</p>
+                        
+                    </div>
+                </div>
+
         </li>
+        <li data-color="Logos">
+
+                <div>
+                        <div class="uk-card uk-card-default">
+
+                        <div class="uk-inline">
+                            <img src="img/prov.jpg" alt="" class="logo-img">
+                            <div class="uk-card-badge uk-label">August 2018</div>
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                <p>Totally_nude</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+            <!-- <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="img/prov.jpg" alt="img1" class="logo-img">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div> -->
+        </li>
+
+
+<!-- 
         <li data-color="Web">
             <div class="uk-card uk-card-default uk-card-body">Item</div>
         </li>
@@ -150,7 +204,7 @@
         </li>
     </ul>
 
-</div>
+</div> -->
 <div class="end -phone">
 
 </div>
