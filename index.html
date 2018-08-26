@@ -30,18 +30,41 @@
                 
                     <div class="uk-navbar-right">
                         
-                        <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-slide">
+                        <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-push">
                                 
-                                <div id="offcanvas-slide" uk-offcanvas="flip: true; mode: slide; overlay: true">
+                                <div id="offcanvas-push" uk-offcanvas="flip: true; mode: slide; overlay: true">
                                     <!-- menu -->
                                         <div class="uk-offcanvas-bar">
                                 
-                                            <button class="uk-offcanvas-close" type="button" uk-close></button>
-                                
-                                            <h3>Email me at:</h3>
-                                
-                                            <p class="menu">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                            <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
+
+                                            <div uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
+
+                                          
+                                            
+                                    
+                                        
+                                         <ul class="uk-nav uk-nav-primary">
+                                             
+                                                <h4 class="menu">Menu:</h4>
+                                            </div>
+                                                <div uk-scrollspy="cls: uk-animation-fade; repeat: false">
+                                                        <div class="pad-menu-top"></div>
+
+                                                <div class="pad-menu-top"></div>
+
+                                                <ol class="option">  <a id="js-scroll-trigger" href="#home" uk-scroll>Home</a> </ol>
+                                                <ol class="option"> <a id="js-scroll-trigger" href="#proj" uk-scroll>Projects</a></ol>
+                                                <ol class="option"> <a id="js-scroll-trigger" href="#cont" uk-scroll>Contacts</a></ol>
+                                                </div>
+                                            </ul> 
+
+                                    
+                                            <div class="pad-menu"></div>
+
+                                            <p class="menu menu-end">This porfolio is designed and developed by <strong> Paolo Laddomada.</strong></p>
                                         </div>
+
                                     </div>
                         </a>
                     </div>
@@ -53,7 +76,7 @@
 
                 <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
                     
-                    <div class="uk-padding">
+                    <div class="uk-padding"  id="home">
                         <div class="pad-top"></div>
                         <div uk-scrollspy="cls: uk-animation-slide-left-small; repeat: false">
 
@@ -160,17 +183,6 @@
                     </div>
                     </div>
 
-
-            <!-- <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="img/prov.jpg" alt="img1" class="logo-img">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Media Top</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div> -->
         </li>
 
 
@@ -205,7 +217,7 @@
     </ul>
 
 </div> -->
-<div class="end -phone">
+<!-- <div class="end -phone"> -->
 
 </div>
 

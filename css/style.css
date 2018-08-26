@@ -36,6 +36,11 @@ body, html {
 }
 
 
+strong {
+    color: #0062FF;
+    border-radius: 10px;
+    padding:  0  4px;
+}
 .uk-text-center{
     text-align:left!important;
 }
@@ -50,6 +55,19 @@ font-size: 3rem;
     margin-bottom: 2vw;
     margin-left: 3.5vw;
     margin-right: 3.5vw;
+}
+
+.option {
+    font-size: 3.6rem;
+    color: blue;
+    line-height: 2;
+}
+.uk-offcanvas-bar .uk-nav-primary>li.uk-active>a {
+    color: black;
+}
+
+.uk-offcanvas-bar .uk-navbar-toggle {
+    display: none;
 }
 @media only screen and (min-width: 768px) {
     .navbar-pad-right {
@@ -77,6 +95,12 @@ font-size: 3rem;
       
         font-size: 1.1vw;
     
+    }
+
+
+    .option {
+        font-size: 2rem;
+        line-height: 3.2;
     }
 }
 
@@ -107,8 +131,18 @@ font-size: 3rem;
     border-radius: 30px;
 }
 
-
-
+.uk-offcanvas-bar a {
+    color: #0062FF ;
+}
+.uk-offcanvas-close {
+    color: #0062FF;
+}
+.uk-offcanvas-bar a:hover {
+    background: #0062FF;
+    color: white;
+    border-radius: 10px;
+    padding: 0 5px;
+}
 .uk-card-default {
     border-radius: 30px;
 }
@@ -122,6 +156,7 @@ font-size: 3rem;
   
     
 }
+
 
 .uk-overlay-primary {
     background: #fff;
@@ -273,3 +308,19 @@ h3 {
  color: #0062FF;
 }
 
+h4 {
+    color: #0062FF;
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+
+
+.pad-menu {
+    padding-bottom: 5vw;
+}
+
+
+.menu-end {
+    color: black;
+}
